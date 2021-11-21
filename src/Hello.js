@@ -2,9 +2,12 @@ import React from 'react';
 import { useQuery } from 'react-query';
 import axios from 'axios';
 function Hello() {
-  const { isLoading, data } = useQuery('fake-api', () =>
+  const { isLoading, data, error, isError } = useQuery('fake-api', () =>
     axios.get('https://fakestoreapi.com/products')
   );
+  if (isError) {
+    return <div>{error.message}</div>;
+  }
   if (isLoading) return <div>Loading...</div>;
   return (
     <div>
