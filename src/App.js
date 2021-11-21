@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.css';
+import Hello from './Hello.js';
 import { QueryClientProvider, QueryClient } from 'react-query';
 
 const client = new QueryClient();
@@ -9,6 +10,7 @@ export default function App() {
     <QueryClientProvider client={client}>
       <div>
         <h1>Hello StackBlitz!</h1>
+        <Hello />
       </div>
     </QueryClientProvider>
   );
