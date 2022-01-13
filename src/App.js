@@ -9,7 +9,7 @@ export default function App() {
   return (
     <QueryClientProvider client={client}>
       <div>
-        <h1>Hello StackBlitz!</h1>
+        <h1>Hello SackBlitz!</h1>
         <Hello />
       </div>
     </QueryClientProvider>
