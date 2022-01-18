@@ -10,7 +10,9 @@ export default function App() {
     <QueryClientProvider client={client}>
       <div>
         <h1>Welcome Users</h1>
+        <div>
         <Hello />
+        </div>
       </div>
     </QueryClientProvider>
   );
